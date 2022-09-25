@@ -90,3 +90,10 @@
 .bullet {
   color: white;
 }
+
+.clickable {
+  color: rgb(2, 85, 168);
+  cursor: pointer;
+  -webkit-user-select: none;
+  transition: all 0.1s;
+}
