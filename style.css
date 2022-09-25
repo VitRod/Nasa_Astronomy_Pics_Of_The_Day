@@ -107,3 +107,7 @@
 }
 
 /* Images Container */
+.images-container {
+  width: 800px;
+  margin: 0 auto;
+}
