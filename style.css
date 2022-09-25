@@ -86,3 +86,7 @@
   transition: all 0.2s;
   box-shadow: 0px 1px 0px rgba(139, 139, 139, 0.7);
 }
+
+.bullet {
+  color: white;
+}
