@@ -111,3 +111,12 @@
   width: 800px;
   margin: 0 auto;
 }
+
+.card {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background: white;
+  margin: 10px 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
