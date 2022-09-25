@@ -72,7 +72,7 @@
   align-items: center;
   align-content: center;
   font-size: 1.2rem;
-  background: rgba(20, 20, 20, 0.952);
+  background: rgba(42, 66, 102, 0.952);
   padding: 1rem 14.7rem;
 }
 
@@ -117,12 +117,12 @@
   border-top-left-radius: 5px;
   background: white;
   margin: 10px 10px 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(44, 66, 111, 0.2);
   transition: 0.3s;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(44, 66, 111, 0.2);
 }
 
 .card-img-top {
@@ -140,4 +140,86 @@ img {
 .card-title {
   margin: 10px auto;
   font-size: 24px;
+}
+
+/* Save Confirmation */
+.save-confirmed {
+  background: rgb(255, 255, 255);
+  padding: 0.8rem 1.1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.added {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 1px;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Large Smartphone (Vertical) */
+@media screen and (max-width: 800px) {
+  body {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .navigation-items {
+    font-size: 1rem;
+  }
+
+  .images-container {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .save-confirmed {
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    line-height: 1.4rem;
+    font-size: 0.7rem;
+    text-align: justify;
+  }
+  .navigation-items {
+    font-size: 1rem;
+  }
+
+  .background {
+    height: 77px;
+  }
+
+  .images-container {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .save-confirmed {
+    right: 25px;
+  }
 }
