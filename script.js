@@ -81,4 +81,14 @@ function showContent(page) {
       imagesContainer.appendChild(card);
     });
   }
+
+  function updateDOM(page) {
+    // get favorites from localstorage
+    if (localStorage.getItem('nasaFavorites')) {
+      favorites = JSON.parse(localStorage.getItem('nasaFavorites'));
+    }
+    imagesContainer.textContent = '';
+    createDOMNodes(page);
+    showContent(page);
+  }
   
