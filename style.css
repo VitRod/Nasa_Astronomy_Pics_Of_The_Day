@@ -97,3 +97,7 @@
   -webkit-user-select: none;
   transition: all 0.1s;
 }
+
+.clickable:hover {
+  color: rgb(5, 66, 126);
+}
