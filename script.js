@@ -91,4 +91,18 @@ function showContent(page) {
     createDOMNodes(page);
     showContent(page);
   }
+
+  // get 10 images from NASA API
+async function getNasaPictures() {
+    // show loader
+    loader.classList.remove('hidden');
+    try {
+      const response = await fetch(apiURL);
+      resultsArray = await response.json();
+      updateDOM('results');
+    } catch (error) {
+      console.log('error', error);
+      //catch error here
+    }
+  }
   
